@@ -1,5 +1,7 @@
 ## Enable highlighting sections on canvas, image .. etc for cropping, .. et cetera.
 
+Adapted from [Resizing and Cropping Images with Canvas](http://tympanus.net/codrops/2014/10/30/resizing-cropping-images-canvas/)
+
 ![](https://dl.dropbox.com/u/30162278/ember-highlight.png)
 
 Install
