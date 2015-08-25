@@ -1,0 +1,65 @@
+.component-highlight{
+  /*position: relative;*/
+}
+
+.component-highlight .resize-container {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  display: none;
+  cursor: move;
+  margin: 0 auto;
+}
+
+.component-highlight .resize-container .resize-container-inner{
+  opacity: .5;
+  background-color: #fff;
+  height: 100%;
+}
+
+.component-highlight .resize-container a{
+  opacity: 1;
+  text-decoration: underline;
+  color: deepskyblue;
+}
+
+.component-highlight .resize-container:hover .resize-container-inner,
+.component-highlight .resize-container:active .resize-container-inner {
+  outline: 2px dashed deepskyblue;
+}
+
+.component-highlight .resize-handle-ne,
+.component-highlight .resize-handle-se,
+.component-highlight .resize-handle-nw,
+.component-highlight .resize-handle-sw {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: deepskyblue;
+  z-index: 999;
+}
+
+.component-highlight .resize-handle-nw {
+  top: -5px;
+  left: -5px;
+  cursor: nw-resize;
+}
+
+.component-highlight .resize-handle-sw {
+  bottom: -5px;
+  left: -5px;
+  cursor: sw-resize;
+}
+
+.component-highlight .resize-handle-ne {
+  top: -5px;
+  right: -5px;
+  cursor: ne-resize;
+}
+
+.component-highlight .resize-handle-se {
+  bottom: -5px;
+  right: -5px;
+  cursor: se-resize;
+}

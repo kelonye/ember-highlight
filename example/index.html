@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='../public/public.css' rel='stylesheet' media='screen'>
+    <style>
+      body{
+        text-align: center;
+      }
+      #highlight-image{
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <script src='../public/public.js'></script>
+    <script data-template-name='index' type='text/x-handlebars'>
+
+      <div id='highlight-image'>
+
+        <div>
+          <img src='image.jpg' class='component-highlight-target'>
+        </div>
+
+        {{#highlight-image}}
+        <br><br>
+        <strong>Crop</strong>
+        {{/highlight-image}}
+
+      </div>
+
+    </script>
+    <script type='text/javascript'>
+      
+      var highlight = require('ember-highlight');
+
+      Em.TEMPLATES['components/highlight-image'] = require('ember-highlight/lib/template');
+
+      App = Em.Application.create();
+      
+      App.HighlightImageComponent = Em.Component.extend(highlight, {
+
+        setup: function(){
+
+          $(this.get('targetElement')).one('load', this.send.bind(this, 'onsetup'));          
+
+        }.on('didInsertElement'),
+
+      });
+
+    </script>
+  </body>
+</html>
