@@ -1,4 +1,4 @@
-## Enable highlighting sections on canvas, image .. etc for cropping, .. et cetera.
+## Enable highlighting sections on canvas, images .. etc for cropping, .. et cetera.
 
 Adapted from [Resizing and Cropping Images with Canvas](http://tympanus.net/codrops/2014/10/30/resizing-cropping-images-canvas/)
 

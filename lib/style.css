@@ -63,3 +63,19 @@
   right: -5px;
   cursor: se-resize;
 }
+
+.component-highlight .resize-handle-n {
+  cursor: n-resize;
+}
+
+.component-highlight .resize-handle-s {
+  cursor: s-resize;
+}
+
+.component-highlight .resize-handle-w {
+  cursor: w-resize;
+}
+
+.component-highlight .resize-handle-e {
+  cursor: e-resize;
+}
