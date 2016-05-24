@@ -1,0 +1,9 @@
+.resize-container
+
+  .resize-container-inner
+    {{yield}}
+
+  span(class='resize-handle resize-handle-nw {{if is-y resize-handle-n}} {{if is-x resize-handle-w}}')
+  span(class='resize-handle resize-handle-ne {{if is-y resize-handle-n}} {{if is-x resize-handle-e}}')
+  span(class='resize-handle resize-handle-se {{if is-y resize-handle-s}} {{if is-x resize-handle-e}}')
+  span(class='resize-handle resize-handle-sw {{if is-y resize-handle-s}} {{if is-x resize-handle-w}}')

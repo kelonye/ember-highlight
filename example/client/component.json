@@ -1,0 +1,19 @@
+{
+  "name": "example",
+  "local": [
+    "ember-highlight"
+  ],
+  "paths": [
+    ".",
+    "../../.."
+  ],
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "style.css"
+  ],
+  "jhbs": [
+    "template"
+  ]
+}
